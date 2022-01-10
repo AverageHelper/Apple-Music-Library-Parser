@@ -33,7 +33,7 @@ This project is entirely open source. Do with it what you will. If you're willin
 🧐 If you're feeling especially fantastic you might consider contributing to the project directly:
 
 - Fork this project.
-- Make your changes. Recommended IDE Setup: [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- Make your changes.
 - Submit a PR. (GitHub will ping me for you, so no need to @ me)
 
 I don't have all the time in the world, so PRs are especially appreciated.
