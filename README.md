@@ -28,7 +28,7 @@ $ npm start /path/to/Library.xml
 
 ## Contributing
 
-This project is entirely open source. Do with it what you will. If you're willing to help me improve this project, consider [filing an issue](https://github.com/AverageHelper/accountable-vue/issues/new/choose).
+This project is entirely open source. Do with it what you will. If you're willing to help me improve this project, consider [filing an issue](https://github.com/AverageHelper/Apple-Music-Library-Parser/issues/new/choose).
 
 🧐 If you're feeling especially fantastic you might consider contributing to the project directly:
 
