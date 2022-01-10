@@ -1,4 +1,5 @@
 import "source-map-support/register.js";
+import { exploreLibrary } from "./exploreLibrary.js";
 import { hideBin } from "yargs/helpers";
 import { parseLibrary } from "./parseLibrary.js";
 import { version as packageVersion } from "./version.js";
@@ -35,6 +36,7 @@ void fs
 		spinner.succeed(`Got ${data.byteLength} bytes`);
 		return parseLibrary(data.toString());
 	})
+	.then(exploreLibrary)
 	.catch(error => {
 		spinner.fail();
 		console.error(error);

@@ -15,6 +15,13 @@ function isAppleMusicLibrary(tbd: unknown): tbd is AppleMusicLibrary {
 	);
 }
 
+/**
+ * Parses the given Plist XML into a JavaScript object representation of an
+ * Apple Music library.
+ *
+ * @returns The library data, or `null` if the give XML does not represent
+ * a valid library.
+ */
 export function parseLibrary(xml: string): AppleMusicLibrary | null {
 	console.info(`Parsing ${xml.length} chars of XML...`);
 	const lib = plist.parse(xml).valueOf();
@@ -22,12 +29,6 @@ export function parseLibrary(xml: string): AppleMusicLibrary | null {
 		console.info("Plist does not contain known Apple Music Library data");
 		return null;
 	}
-
-	const libVersion = `${lib["Major Version"]}.${lib["Minor Version"]}`;
-	const tracks = Object.values(lib.Tracks);
-
-	console.info(`\nApple Music Library version ${libVersion}`);
-	console.info(`Found ${tracks.length} tracks`);
 
 	return lib;
 }
