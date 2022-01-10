@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+
+# Secret files
+.env
+Dockerfile
+
+# Useless files
+*.log
+logs
+node_modules
+
+# Generated files
+db
+db-test
+dist
+lib
+./config
+coverage
+src/version.ts
+tmp
+temp

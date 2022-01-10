@@ -1,0 +1,61 @@
+{
+	"name": "NODE_PROJECT_TEMPLATE",
+	"version": "1.0.0",
+	"description": "A backup manager for snapd",
+	"main": "./lib/main.js",
+	"files": [
+		"lib/"
+	],
+	"scripts": {
+		"build": "npm run export-version && tsc -p tsconfig.prod.json",
+		"build:clean": "rm -rf lib && npm run build",
+		"start": "nodemon --inspect .",
+		"test": "jest --selectProjects src --verbose --coverage",
+		"test:watch": "npm run test -- --watch --coverage=false",
+		"export-version": "genversion ./src/version.ts -es",
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AverageHelper/NODE_PROJECT_TEMPLATE.git"
+	},
+	"keywords": [
+		"snapd",
+		"rclone",
+		"backup"
+	],
+	"author": "Average Helper",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AverageHelper/NODE_PROJECT_TEMPLATE/issues"
+	},
+	"homepage": "https://github.com/AverageHelper/NODE_PROJECT_TEMPLATE#readme",
+	"devDependencies": {
+		"@types/jest": "^26.0.24",
+		"@types/node": "^16.4.2",
+		"@types/source-map-support": "^0.5.4",
+		"@typescript-eslint/eslint-plugin": "^4.28.4",
+		"@typescript-eslint/parser": "^4.28.4",
+		"eslint": "^7.31.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-strictest": "^0.3.1",
+		"eslint-plugin-jest": "^24.4.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-unicorn": "^34.0.1",
+		"genversion": "^3.0.1",
+		"jest": "^27.0.6",
+		"jest-environment-node": "^27.0.6",
+		"jest-extended": "^0.11.5",
+		"nodemon": "^2.0.12",
+		"prettier": "^2.3.2",
+		"ts-jest": "^27.0.4",
+		"typescript": "^4.3.5"
+	},
+	"dependencies": {
+		"source-map-support": "^0.5.19",
+		"yargs": "^17.0.1"
+	}
+}
