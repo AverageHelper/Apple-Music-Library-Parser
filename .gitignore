@@ -20,3 +20,4 @@ coverage
 src/version.ts
 tmp
 temp
+package-lock.json
