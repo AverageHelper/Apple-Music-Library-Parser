@@ -37,13 +37,14 @@
 	"homepage": "https://github.com/AverageHelper/Apple-Music-Library-Parser#readme",
 	"dependencies": {
 		"ora": "^6.0.1",
-		"sax": "^1.2.4",
+		"plist": "^3.0.4",
 		"source-map-support": "^0.5.19",
 		"yargs": "^17.0.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.4.0",
 		"@types/node": "^16.4.2",
+		"@types/plist": "^3.0.2",
 		"@types/source-map-support": "^0.5.4",
 		"@typescript-eslint/eslint-plugin": "^5.1.0",
 		"@typescript-eslint/parser": "^5.1.0",

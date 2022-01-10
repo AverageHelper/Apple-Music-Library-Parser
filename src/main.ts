@@ -26,13 +26,16 @@ void fs
 	.lstat(filename)
 	.then(stats => {
 		if (stats.isDirectory()) {
-			spinner.stop();
+			spinner.fail();
 			throw new EvalError(`"${filename}" is a directory.`);
 		}
 		return fs.readFile(filename);
 	})
 	.then(data => {
-		spinner.stop();
-		console.log(`Got ${data.byteLength} bytes`);
+		spinner.succeed(`Got ${data.byteLength} bytes`);
 		return parseLibrary(data.toString());
+	})
+	.catch(error => {
+		spinner.fail();
+		console.error(error);
 	});
