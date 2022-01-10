@@ -1,16 +1,16 @@
 # Apple-Music-Library-Parser
 
-\<description here\>
+A Node.js project to parse the Library.xml file you get from Apple Music into a nice UI without messing up your existing library.
 
 ## Setup
 
 ### Prerequesites
 
-This project requires NPM v7 or above. You can check what version you have installed by running `npm -v`:
+This project requires Node 16 or above. You can check what version you have installed by running `node -v`:
 
 ```sh
-$ npm -v
-7.20.3
+$ node -v
+v16.13.1
 ```
 
 ### Install Dependencies and Build

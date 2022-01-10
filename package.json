@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"description": "A Node.js project to parse the Library.xml file you get from Apple Music into a nice UI without messing up your existing library.",
 	"main": "./lib/main.js",
+	"type": "module",
 	"files": [
 		"lib/"
 	],
@@ -35,6 +36,8 @@
 	},
 	"homepage": "https://github.com/AverageHelper/Apple-Music-Library-Parser#readme",
 	"dependencies": {
+		"ora": "^6.0.1",
+		"sax": "^1.2.4",
 		"source-map-support": "^0.5.19",
 		"yargs": "^17.0.1"
 	},
