@@ -7,11 +7,13 @@ function listTracks(tracks: Array<AppleMusicLibraryTrack>): void {
 
 	Object.entries(tracksByAlbum).forEach(([album, tracks]) => {
 		console.info(`${album}:`);
-		tracks.forEach(track => {
-			const artist = track.Artist ?? track["Album Artist"] ?? "Unknown Artist";
-			const name = track.Name;
-			console.info(`\t${artist} — ${name}`);
-		});
+		tracks
+			.sort((a, b) => (a["Track Number"] ?? 0) - (b["Track Number"] ?? 0))
+			.forEach(track => {
+				const artist = track.Artist ?? track["Album Artist"] ?? "Unknown Artist";
+				const name = track.Name;
+				console.info(`\t${artist} — ${name}`);
+			});
 		console.info(`\n`); // separate albums
 	});
 }
@@ -76,7 +78,7 @@ async function exploreTracks(lib: AppleMusicLibrary): Promise<void> {
 				message: "What would you like to see?",
 				choices: [
 					{ name: "Apple Music Tracks", value: "apple-music" },
-					{ name: "Mine Tracks", value: "local" },
+					{ name: "My Tracks", value: "local" },
 					{ name: "All Tracks", value: "all" },
 					{ name: "Main Menu", value: "return" }
 				]

@@ -11,7 +11,7 @@ interface AppleMusicLibraryTrack {
 	"Total Time": number;
 	"Disc Number"?: number;
 	"Disc Count"?: number;
-	"Track Number": number;
+	"Track Number"?: number;
 	"Track Count"?: number;
 	Year: number;
 	"Date Modified": Date;
