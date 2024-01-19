@@ -4,6 +4,7 @@
 # Secret files
 .env
 Dockerfile
+Library.xml
 
 # Useless files
 *.log
