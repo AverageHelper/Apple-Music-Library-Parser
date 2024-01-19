@@ -20,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AverageHelper/Apple-Music-Library-Parser.git"
+		"url": "git+https://git.average.name/AverageHelper/Apple-Music-Library-Parser.git"
 	},
 	"keywords": [
 		"node",
@@ -32,9 +32,9 @@
 	"author": "Average Helper",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/AverageHelper/Apple-Music-Library-Parser/issues"
+		"url": "https://git.average.name/AverageHelper/Apple-Music-Library-Parser/issues"
 	},
-	"homepage": "https://github.com/AverageHelper/Apple-Music-Library-Parser#readme",
+	"homepage": "https://git.average.name/AverageHelper/Apple-Music-Library-Parser#readme",
 	"dependencies": {
 		"inquirer": "^8.2.0",
 		"lodash": "^4.17.21",
